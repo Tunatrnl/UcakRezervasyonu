@@ -14,6 +14,7 @@ namespace UcakRezervasyonu
         public string Ad;
         public char Cinsiyet;
         public string Tarih;
+        public string Saat;
         public string Lokasyon;
 
         public Ucak(string AdX, char CinsiyetX)
@@ -48,6 +49,10 @@ namespace UcakRezervasyonu
             Console.Write("\nTarih seçiniz (Gün/Ay/Yıl): ");
             Tarih = Console.ReadLine();
 
+            Console.Write("\nSaat Seçiniz (00:00): ");
+            Saat = Console.ReadLine();
+
+
             Rezervasyon rezervasyon = new Rezervasyon();
         }
 
@@ -57,9 +62,9 @@ namespace UcakRezervasyonu
             Rezervasyon rezervasyon = new Rezervasyon();
 
             if(Cinsiyet == 'E')
-                tempReturn= "\nSayın " + Ad + " bey; \nUçak numaranız: " + UcakID + "\nUçuş tarihiniz: " + Tarih + "\nLokasyonunuz: " + Lokasyon  + "\nBilet ücretiniz: " + rezervasyon.Fiyat + " TL\n";
+                tempReturn= "\nSayın " + Ad + " bey; \nUçak numaranız: " + UcakID + "\nUçuş tarihiniz: " + Tarih + "\nUçuş Saatiniz: " + Saat + "\nLokasyonunuz: " + Lokasyon  + "\nBilet ücretiniz: " + rezervasyon.Fiyat + " TL\n";
             else if(Cinsiyet == 'K')
-                tempReturn = "\nSayın " + Ad + " hanım; \nUçak numaranız: " + UcakID + "\nUçuş tarihiniz: " + Tarih + "\nLokasyonunuz: " + Lokasyon + "\nBilet ücretiniz: " + rezervasyon.Fiyat + " TL\n";
+                tempReturn = "\nSayın " + Ad + " hanım; \nUçak numaranız: " + UcakID + "\nUçuş tarihiniz: " + Tarih + "\nUçuş Saatiniz: " + Saat + "\nULokasyonunuz: " + Lokasyon + "\nBilet ücretiniz: " + rezervasyon.Fiyat + " TL\n";
 
             return tempReturn;
         }
