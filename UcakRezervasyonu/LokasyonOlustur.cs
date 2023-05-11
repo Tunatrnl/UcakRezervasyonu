@@ -16,10 +16,13 @@ namespace UcakRezervasyonu
 
         public LokasyonOlustur()
         {
-            Lokasyonlar.Add("İstanbul/Türkiye, Sabiha Gökçen Havalimanı");
-            Lokasyonlar.Add("İstanbul/Türkiye, Atatürk Havalimanı");
-            Lokasyonlar.Add("Moskova/Rusya, Domodedovo Havalimanı");
-            Lokasyonlar.Add("New York City/Amerika, LuGuardia Havalimanı");
+            Lokasyonlar.Add("İstanbul / Türkiye, Sabiha Gökçen Havalimanı");
+            Lokasyonlar.Add("İstanbul / Türkiye, Atatürk Havalimanı");
+            Lokasyonlar.Add("Moskova / Rusya, Domodedovo Havalimanı");
+            Lokasyonlar.Add("New York City / Amerika, LuGuardia Havalimanı");
+            Lokasyonlar.Add("Muan / Kore, Muan Uluslararası Havalimanı");
+            Lokasyonlar.Add("Augsburg / Almanya, Augsburg Havalimanı");
+            Lokasyonlar.Add("Amsterdan / Hollanda, Amsterdam Schiphol Havalimanı");
         }
     }
 }
